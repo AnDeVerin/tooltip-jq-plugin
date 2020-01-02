@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tooltip Demo</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="tooltip.css">
+    <script src="tooltip.js"></script>
+</head>
+
+<body class="body">
+    <h1 class="title">Tooltip demo!</h1>
+
+    <p class="description">There are a few HTML elements below. Please, hover the mouse over them and see the tooltip.
+    </p>
+
+    <main class="main">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Sunflower_from_Mediawiki_logo_reworked_2.svg"
+            alt="Image of sunflower" class="main__sun tooltip-on-image">
+
+        <span class="tooltip-on-text">Some text</span>
+
+        <div class="main__center">Scroll down to see the rest...</div>
+
+        <button class="btn tooltip-on-btn">Button</button>
+
+        <svg class="svg-heart tooltip-on-svg" viewBox="0 0 300 300" fill="red">
+            <path d="M0 200 v-200 h200 a100,100 90 0,1 0,200 a100,100 90 0,1 -200,0 z" />
+        </svg>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
